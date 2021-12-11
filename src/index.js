@@ -7,7 +7,7 @@ import {ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client';
 console.log('apollo url', process.env.APOLLO_URL)
 
 const client = new ApolloClient({
-  uri: process.env.APOLLO_URL || 'https://localhost:4000',
+  uri: 'https://apollo-server-test-pravin.herokuapp.com/' || 'https://localhost:4000',
   cache: new InMemoryCache(),
 });
 
